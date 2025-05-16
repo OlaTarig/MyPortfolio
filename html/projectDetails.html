@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm py-4 px-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="navigation.html#projects" class="text-blue-600 hover:underline">← Back to Projects</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-12 px-6 md:px-12 max-w-4xl mx-auto">
+    <!-- Project Title -->
+    <h2 class="text-3xl font-bold mb-4">Face Login System</h2>
+    
+    <!-- Project Overview -->
+    <p class="text-gray-600 mb-6">
+      This project is a web based face authentication system, built using Flask and OpenCV
+    </p>
+
+    <!-- Tech Stack -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-2">Tech Stack</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Frontend: HTML, CSS</li>
+        <li>Backend: Python, Flask</li>
+        <li>Database: SQLite</li>
+        <li>Face Recognition: Numpy, OpenCV, Face Recognition Library</li>
+      </ul>
+    </div>
+
+    <!-- Images or Screenshots -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-2">Screenshots</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <img src="../faceLogin1.png" alt="Screenshot 1" class="rounded shadow-sm">
+        <img src="../faceLogin2.png" alt="Screenshot 2" class="rounded shadow-sm">
+         <img src="../faceLogin3.png" alt="Screenshot 2" class="rounded shadow-sm">
+         <img src="../faceLogin4.png" alt="Screenshot 2" class="rounded shadow-sm">
+
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-2">Features</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>User Registration - Face images are captured and stored in the database.</li>
+        <li>Login Attempt - The system detects a face when a user tries to log in.</li>
+        <li>Face Matching - Compares the detected face with stored data.</li>
+        <li>Authentication Result - Grants access if a match is found; otherwise, denies login.</li>
+      </ul>
+    </div>
+
+    <!--GitHub -->
+    <div class="flex gap-4">
+      <a href="https://github.com/OlaTarig/Face_Login_System.git" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900">
+        View Code
+      </a>
+    </div>
+    <br>
+    <div class = "mb-8" id = "liveDemo"></div>
+    <h3 class="text-xl font-semibold mb-2">Live Demo</h3>
+    <video width="500" height="500" autoplay muted>
+  <source src="../facelogin.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+  </main>
+
+  <!-- Footer -->
+</body>
+</html>

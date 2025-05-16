@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  rel="stylesheet"
+/>
+</head>
+<body class="bg-gray-50">
+ <!-- NAVIGATION -->
+<nav class="fixed w-full bg-white z-50">
+  <div class="max-w-6xl mx-auto flex justify-center items-center py-4">
+    <div class="flex space-x-8">
+      <a href="#about" class="text-gray-700 hover:bg-blue-100 active:bg-blue-200 px-4 py-2 rounded transition">
+        About
+      </a>
+      <a href="#projects" class="text-gray-700 hover:bg-blue-100 active:bg-blue-200 px-4 py-2 rounded transition">
+        Projects
+      </a>
+      <a href="#contact" class="text-gray-700 hover:bg-blue-100 active:bg-blue-200 px-4 py-2 rounded transition">
+        Skills
+      </a>
+      <a href="#contact" class="text-gray-700 hover:bg-blue-100 active:bg-blue-200 px-4 py-2 rounded transition">
+        Contact
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex justify-center items-center px-6 md:px-12 pt-16 relative overflow-hidden">
+  <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Left Text Side -->
+    <div class="flex flex-col space-y-8 animate-fade-in">
+      <h2 class="text-3xl md:text-5xl font-bold tracking-tighter">
+        <span class="text-blue-600">Hello, I'm</span>
+      </h2>
+      <h1 class="text-5xl md:text-7xl font-bold text-gray-800">Ola Tarig</h1>
+      <p class="text-xl md:text-2xl text-gray-600 max-w-md">
+        A senior <span class="text-blue-600 font-semibold">Software Engineering student.</span> I enjoy learning new technologies, solving problems, and turning ideas into real projects.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap gap-4">
+        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+          class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+          Contact Me
+        </button>
+        <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })"
+          class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition">
+          View Projects
+        </button>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="flex items-center space-x-4 pt-8">
+        <a href="https://github.com/OlaTarig" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition-colors cursor-pointer">
+          <i class="fab fa-github text-blue-600 text-xl"></i>
+        </a>
+        <a href="https://linkedin.com/in/Olatarig" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition-colors cursor-pointer">
+          <i class="fab fa-linkedin-in text-blue-600 text-xl"></i>
+        </a>
+        <a href="https://twitter.com/olatarig190" target="_blank" class="w-10 h-10 rounded-full bg-blue-600 bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition-colors cursor-pointer">
+          <i class="fab fa-x-twitter text-blue-600 text-xl"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Image Side -->
+    <div class="relative hidden md:block">
+      <div class="absolute top-0 -left-4 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
+      <div class="absolute top-0 -right-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-2000"></div>
+      <div class="absolute -bottom-8 left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob animation-delay-4000"></div>
+      <div class="relative">
+        <img 
+          src="../placeholder.svg" 
+          alt="Ola Tarig" 
+          class="rounded-full border-4 border-white shadow-lg w-full max-w-md mx-auto"
+        />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll Down Arrow -->
+  <div 
+    class="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce cursor-pointer"
+    onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })"
+  >
+    <div class="w-10 h-10 border-2 border-gray-600 rounded-full flex items-center justify-center">
+      <div class="w-2 h-2 border-b-2 border-r-2 border-gray-600 transform rotate-45 translate-y-[-2px]"></div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-24 px-6 md:px-12">
+    <div class="container mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="text-blue-500">Me</span></h2>
+        <div class="w-16 h-1 bg-blue-500 mx-auto"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Image -->
+        <div class="relative hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 border-2 border-blue-500 rounded-lg transform translate-x-5 translate-y-5"></div>
+          <img 
+            src="../placeholder.svg" 
+            alt="About Me" 
+            class="rounded-lg shadow-lg relative z-10"
+          />
+        </div>
+
+        <!-- Text -->
+        <div class="space-y-6">
+          <h3 class="text-2xl font-bold">Developement & AI Enthusiast</h3>
+          <p class="text-gray-600">
+            I'm a curious and passionate learner with a growing interest in Artificial Intelligence, UI/UX design, and software front-end development.
+             While I'm still exploring these fields, I've taken several courses
+              that have helped me build a foundational understanding and apply some concepts in practice.
+          </p>
+          <p class="text-gray-600">
+            Though I'm still developing my technical skills,
+             I'm always eager to explore new tools, learn from others, and turn ideas into meaningful experiences.
+          </p>
+
+          <!-- Info Grid -->
+          <div class="grid grid-cols-2 gap-6 mt-8">
+            <div>
+              <h4 class="font-semibold mb-2">Name:</h4>
+              <p class="text-gray-600">Ola Tarig</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Email:</h4>
+              <p class="text-gray-600">olatarig190@gmail.com</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Location:</h4>
+              <p class="text-gray-600">Riyadh, KSA</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Availability:</h4>
+              <p class="text-blue-500 font-medium">Available for hire</p>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex gap-4 mt-4">
+            <button id="downloadCV" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+              Download CV
+            </button>
+            <button id="contactMe" class="border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-50 transition">
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS SECTION -->
+<section id="projects" class="py-24 px-6 md:px-12 bg-gray-50">
+  <div class="container mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        My <span class="text-primary">Projects</span>
+      </h2>
+      <div class="w-16 h-1 bg-primary mx-auto"></div>
+      <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+        Here are some of my recent projects. Each one was built with care and attention to detail.
+      </p>
+    </div>
+
+    <div class="overflow-x-auto flex gap-6 scroll-smooth snap-x snap-mandatory pb-4">
+      <!-- Project Card -->
+      <div class="min-w-[300px] md:min-w-[45%] bg-white rounded-lg shadow-lg overflow-hidden snap-start">
+        <div class="relative h-48 overflow-hidden group">
+          <img src="../project1.png" alt="Smart Home"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Face login system</h3>
+          <p class="text-gray-600 mb-4">
+            This Face Recognition system for Smart Homes project provides a secure and convenient login system using facial recognition. 
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Flask</span>
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">python</span>
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">SQL</span>
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Opencv</span>
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">html</span>
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">css</span>
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Git</span>
+
+          </div>
+          <div class="flex gap-3">
+            <button onclick="window.location.href = 'projectDetails.html#liveDemo'"
+              class="px-4 py-2 text-white bg-primary rounded hover:bg-primary/90">Live Demo</button>
+              <button onclick="window.location.href = 'projectDetails.html'"
+              class="px-4 py-2 border border-primary text-primary rounded hover:bg-primary/10">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat this block for each project -->
+      <div class="min-w-[300px] md:min-w-[45%] bg-white rounded-lg shadow-lg overflow-hidden snap-start">
+        <div class="relative h-48 overflow-hidden group">
+          <img src="../SmartHomeLogo1" alt="Task Management App"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+          <p class="text-gray-600 mb-4">
+            A drag-and-drop task management app with real-time updates and team collaboration features.
+          </p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">React</span>
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Redux</span>
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Firebase</span>
+            <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Tailwind CSS</span>
+          </div>
+          <div class="flex gap-3">
+            <button onclick="window.location.href = 'projectDetails.html#liveDemo'"
+              class="px-4 py-2 text-white bg-primary rounded hover:bg-primary/90">Live Demo</button>
+              <button onclick="window.location.href = 'projectDetails.html'"
+              class="px-4 py-2 border border-primary text-primary rounded hover:bg-primary/10">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add other project cards as needed... -->
+    </div>
+  </div>
+</section>
+<!-- Skills Section -->
+<section id="skills" class="py-24 px-6 md:px-12 bg-gray-50">
+  <div class="container mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        My <span class="text-primary">Skills</span>
+      </h2>
+      <div class="w-16 h-1 bg-primary mx-auto"></div>
+      <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+        I'm constantly learning and improving my skills to stay up-to-date with the latest technologies.
+      </p>
+    </div>
+
+    <!-- Category Buttons -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12" id="skill-filters">
+      <button data-category="all" class="skill-btn bg-primary text-white">All</button>
+      <button data-category="frontend" class="skill-btn">Frontend</button>
+      <button data-category="backend" class="skill-btn">Backend</button>
+      <button data-category="design" class="skill-btn">Design</button>
+      <button data-category="tools" class="skill-btn">Tools</button>
+    </div>
+
+    <!-- Skills Grid -->
+    <div id="skills-grid" class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- Skill cards will be injected here by JavaScript -->
+    </div>
+  </div>
+</section>
+
+<script>
+  const skillsData = [
+    { name: "HTML5/CSS3", level: 95, category: "frontend" },
+    { name: "JavaScript", level: 90, category: "frontend" },
+    { name: "React", level: 92, category: "frontend" },
+    { name: "TypeScript", level: 85, category: "frontend" },
+    { name: "Tailwind CSS", level: 90, category: "frontend" },
+    { name: "Next.js", level: 80, category: "frontend" },
+    { name: "Node.js", level: 75, category: "backend" },
+    { name: "Express", level: 78, category: "backend" },
+    { name: "MongoDB", level: 70, category: "backend" },
+    { name: "SQL", level: 65, category: "backend" },
+    { name: "UI/UX Design", level: 85, category: "design" },
+    { name: "Figma", level: 80, category: "design" },
+    { name: "Git/GitHub", level: 88, category: "tools" },
+    { name: "Webpack", level: 75, category: "tools" },
+    { name: "Docker", level: 60, category: "tools" },
+  ];
+
+  const skillsGrid = document.getElementById("skills-grid");
+  const buttons = document.querySelectorAll(".skill-btn");
+
+  function renderSkills(category = "all") {
+    skillsGrid.innerHTML = "";
+    const filtered = category === "all" ? skillsData : skillsData.filter(s => s.category === category);
+    
+    filtered.forEach((skill, index) => {
+      const card = document.createElement("div");
+      card.className = "bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow opacity-0 animate-fade-in";
+      card.style.animationDelay = `${index * 100}ms`;
+
+      card.innerHTML = `
+        <div class="flex justify-between mb-2">
+          <h3 class="font-medium">${skill.name}</h3>
+          <span class="text-primary font-semibold">${skill.level}%</span>
+        </div>
+        <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+          <div class="h-full bg-primary rounded-full transition-all duration-500" style="width: ${skill.level}%"></div>
+        </div>
+      `;
+
+      skillsGrid.appendChild(card);
+    });
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      buttons.forEach(b => b.classList.remove("bg-primary", "text-white"));
+      btn.classList.add("bg-primary", "text-white");
+      renderSkills(btn.dataset.category);
+    });
+  });
+
+  renderSkills(); // Initial render
+</script>
+
+<style>
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .skill-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #f3f4f6; /* Tailwind's gray-100 */
+    color: #374151; /* Tailwind's gray-700 */
+    transition: background-color 0.3s;
+  }
+
+  .skill-btn:hover {
+    background-color: #e5e7eb; /* Tailwind's gray-200 */
+  }
+
+  .text-primary {
+    color: #3b82f6; /* Tailwind's blue-500 */
+  }
+
+  .bg-primary {
+    background-color: #3b82f6;
+  }
+</style>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-24 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Contact <span class="text-blue-600">Me</span>
+        </h2>
+        <div class="w-16 h-1 bg-blue-600 mx-auto"></div>
+        <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+          Have a question or want to work together? Feel free to contact me!
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-12">
+        <!-- Contact Info -->
+        <div class="space-y-8">
+          <div class="flex items-start space-x-4">
+            <div class="bg-blue-100 p-3 rounded-full">
+              <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M3 5a2 2 0 012-2h2l2 3h6l2-3h2a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold mb-1">Phone</h3>
+              <p class="text-gray-600">+1 (555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="bg-blue-100 p-3 rounded-full">
+              <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M16 12l-4-4-4 4m8 0H4" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold mb-1">Email</h3>
+              <p class="text-gray-600">john@example.com</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="bg-blue-100 p-3 rounded-full">
+              <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M17.657 16.657L13.414 12.414A2 2 0 0012 12H6a2 2 0 00-2 2v6a2 2 0 002 2h6c.265 0 .52-.105.707-.293l4.243-4.243a1 1 0 000-1.414z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold mb-1">Location</h3>
+              <p class="text-gray-600">New York, NY</p>
+            </div>
+          </div>
+
+          <div class="flex space-x-4 pt-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center hover:bg-blue-200 transition">
+              <span class="text-blue-600 font-bold">GH</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center hover:bg-blue-200 transition">
+              <span class="text-blue-600 font-bold">IN</span>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center hover:bg-blue-200 transition">
+              <span class="text-blue-600 font-bold">TW</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="md:col-span-2">
+          <form id="contactForm" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input name="name" type="text" placeholder="Your Name" required class="p-3 w-full border rounded-md bg-white" />
+              <input name="email" type="email" placeholder="Your Email" required class="p-3 w-full border rounded-md bg-white" />
+            </div>
+            <input name="subject" type="text" placeholder="Subject" required class="p-3 w-full border rounded-md bg-white" />
+            <textarea name="message" rows="6" placeholder="Your Message" required class="p-3 w-full border rounded-md resize-none bg-white"></textarea>
+            <button id="submitBtn" type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition w-full md:w-auto">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed top-5 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-md shadow-lg z-50 hidden">
+      Message sent! I'll get back to you soon.
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const toast = document.getElementById('toast');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'Sending...';
+
+      setTimeout(() => {
+        toast.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.innerText = 'Send Message';
+        form.reset();
+
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 3000);
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
