@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm py-4 px-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="navigation.html#projects" class="text-blue-600 hover:underline">← Back to Projects</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-12 px-6 md:px-12 max-w-4xl mx-auto">
+    <!-- Project Title -->
+    <h2 class="text-3xl font-bold mb-4">Morse Code Translation app</h2>
+    
+    <!-- Project Overview -->
+    <p class="text-gray-600 mb-6">
+     This SwiftUI-based Morse Code app allows users to translate English text into Morse code and play the corresponding sounds. 
+     Additionally, it includes a dedicated learning section
+      where users can explore Morse code representations of letters and numbers along with their sounds.
+    </p>
+
+    <!-- Tech Stack -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-2">Tech Stack</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>UI Design: SwiftUI</li>
+        <li>Sound palyback: AVFoundation</li>
+      </ul>
+    </div>
+
+    <!-- Features -->
+    <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-2">Features</h3>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Text to Morse Translation: Convert English text into Morse code.</li>
+        <li>Sound Playback: Hear the Morse code representation of the text</li>
+        <li>Learning Mode: View letters and numbers alongside their Morse code representations and play their sounds. </li>
+        <li>User-Friendly Interface: Intuitive navigation with two tabs:</li>
+        <ul>
+        <li>Translation Tab: Convert English text to Morse code and play the sound</li>
+        <li>Learning Tab: Explore Morse code symbols for letters and numbers with sound.</li>
+        </ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <!--GitHub -->
+    <div class="flex gap-4">
+      <a href="https://github.com/OlaTarig/MorseCode.git" target="_blank" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900">
+        View Code
+      </a>
+    </div>
+    <br>
+    <div class = "mb-8" id = "liveDemo"></div>
+    <h3 class="text-xl font-semibold mb-2">Live Demo</h3>
+    <video width="1000" height="1000" autoplay muted>
+  <source src="../morsecode.MP4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+  </main>
+
+  <!-- Footer -->
+</body>
+</html>
